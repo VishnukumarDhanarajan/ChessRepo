@@ -1,0 +1,35 @@
+{
+  "name": "mecha-kombat-chess-client",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.3",
+    "chess.js": "^1.0.0-beta.6",
+    "gsap": "^3.12.5",
+    "lucide-react": "^0.469.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "socket.io-client": "^4.8.1",
+    "three": "^0.166.0"
+  },
+  "devDependencies": {
+    "@react-three/drei": "^9.109.0",
+    "@react-three/fiber": "^8.17.10",
+    "@types/canvas-confetti": "^1.6.4",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "^0.166.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "oxlint": "^1.71.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.11"
+  }
+}
