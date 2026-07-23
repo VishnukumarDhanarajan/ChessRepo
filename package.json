@@ -7,6 +7,10 @@
     "dev:server": "npm --prefix server run dev",
     "dev:client": "npm --prefix client run dev",
     "dev": "npx concurrently -k -n \"Server,Client\" -c \"magenta,cyan\" \"npm run dev:server\" \"npm run dev:client\"",
-    "build:all": "npm run build --prefix server && npm run build --prefix client"
+    "build:all": "npm run build --prefix server && npm run build --prefix client",
+    "lint:client": "npm --prefix client run lint",
+    "build:client": "npm --prefix client run build",
+    "check:server": "npm --prefix server run check",
+    "ci": "npm run lint:client && npm run build:client && npm run check:server"
   }
 }
